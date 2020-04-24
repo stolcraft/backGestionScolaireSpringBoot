@@ -13,6 +13,7 @@ public interface IEtudiantDao extends JpaRepository<Etudiant, Integer>{
      public Etudiant save(Etudiant etu);
      public List<Etudiant> findAll();
      public Etudiant getById(int id);
+     public void delete(String id);
     
 
 }
