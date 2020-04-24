@@ -8,7 +8,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
-public interface IEtudiantDao extends JpaRepository<Etudiant, Integer>{
+public interface EtudiantRepository extends JpaRepository<Etudiant, Integer>{
     
      public Etudiant save(Etudiant etu);
      public List<Etudiant> findAll();

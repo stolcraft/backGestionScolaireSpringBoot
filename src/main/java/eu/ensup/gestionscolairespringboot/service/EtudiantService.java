@@ -1,6 +1,6 @@
 package eu.ensup.gestionscolairespringboot.service;
 
-import eu.ensup.gestionscolairespringboot.dao.IEtudiantDao;
+import eu.ensup.gestionscolairespringboot.dao.EtudiantRepository;
 import eu.ensup.gestionscolairespringboot.domaine.Etudiant;
 import java.util.List;
 
@@ -10,7 +10,7 @@ public class EtudiantService implements IEtudiantService{
     
 	//On connecte la dao avec l'auto configuration
 	@Autowired
-    private IEtudiantDao etudiantDAO;
+    private EtudiantRepository etudiantDAO;
 	
 	
     //Constructeur par défault
@@ -18,8 +18,8 @@ public class EtudiantService implements IEtudiantService{
 		super();
 	}
 
-    //Constructeur avec l'interface IEtudiantDao
-	public EtudiantService(IEtudiantDao etudiantDAO) {
+    //Constructeur avec l'interface EtudiantRepository
+	public EtudiantService(EtudiantRepository etudiantDAO) {
 		super();
 		this.etudiantDAO = etudiantDAO;
 	}
