@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface IEtudiantDao extends JpaRepository<Etudiant, Integer>{
     
-     public S save(Etudiant etu);
+     public Etudiant save(Etudiant etu);
      public List<Etudiant> findAll();
      public Etudiant getById(int id);
     
