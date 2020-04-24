@@ -7,5 +7,6 @@ public interface IEtudiantService {
     public void saveStudent(Etudiant etu);
     public List<Etudiant> getAll();
     public Etudiant getById(int id);
+    public void deleteStudent(Etudiant etu);
 
 }

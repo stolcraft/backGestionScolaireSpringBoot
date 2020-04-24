@@ -40,6 +40,11 @@ public class EtudiantService implements IEtudiantService{
     {
         return etudiantDAO.getOne(id);
     }
+
+    @Override
+    public void deleteStudent(Etudiant etu) {
+      etudiantDAO.delete(etu);
+    }
     
 
 }
